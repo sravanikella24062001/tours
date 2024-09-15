@@ -2,7 +2,7 @@
   "name": "main",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/sravanikella24062001/travel.reactjs.git",
+  "homepage": "https://github.com/sravanikella24062001/reactwork.git",
   "dependencies": {
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
