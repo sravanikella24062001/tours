@@ -2,8 +2,7 @@
   "name": "main",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/sravanikella24062001/tour.react.git",
-
+  "homepage": "https://github.com/sravanikella24062001/travel.reactjs.git",
   "dependencies": {
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
@@ -18,7 +17,6 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.3",
     "chart.js": "^4.4.4",
-    "prettier": "^3.3.3",
     "ra-data-simple-rest": "^5.1.3",
     "react": "^18.3.1",
     "react-admin": "^5.1.3",
@@ -27,7 +25,7 @@
     "react-dom": "^18.3.1",
     "react-icons": "^5.3.0",
     "react-router-dom": "^6.26.2",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "styled-components": "^6.1.12",
     "swiper": "^11.1.12",
     "web-vitals": "^2.1.4"
@@ -61,7 +59,10 @@
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.36.1",
     "file-loader": "^6.2.0",
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.1.1",
+    "prettier": "^3.3.3"
   }
 }
