@@ -3,6 +3,11 @@ import { Container, Row, Col, Form, Button, Card } from 'react-bootstrap';
 import Sidebar from './Sidebar'; // Ensure this path is correct
 import '../App.css'; // Import your CSS file for custom styles
 
+// Import images
+import flight1 from '../Images/flight1.jpg';
+import flight2 from '../Images/flight2.jpg';
+import flight3 from '../Images/flight3.jpg';
+
 // FlightBookingForm component
 const FlightBookingForm = ({ title }) => {
   const [flightType, setFlightType] = useState('One Way');
@@ -120,91 +125,37 @@ const Services = () => {
           <Sidebar /> {/* Include the Sidebar component */}
         </Col>
         <Col md={9} className="main-content">
-          {/* Explore Destinations Section */}
-          <Row noGutters className="top-sections">
-            <Col md={12} className="section-container">
-              <Card className="info-box">
-                <Card.Body>
-                  <Card.Title>Explore Destinations</Card.Title>
-                  <Row noGutters>
-                    <Col md={4} className="adventure-tours-box mt-3">
-                      <Card.Body>
-                        <Card.Title>Adventure Tours</Card.Title>
-                        <ul>
-                          <li>Mountain Climbing</li>
-                          <li>Scuba Diving</li>
-                          <li>Safari</li>
-                        </ul>
-                      </Card.Body>
-                    </Col>
-                    <Col md={4} className="Cultural-Trips-box mt-3">
-                      <Card.Body>
-                        <Card.Title>Cultural Trips</Card.Title>
-                        <ul>
-                          <li>Historical Sites</li>
-                          <li>Museums</li>
-                          <li>Festivals</li>
-                        </ul>
-                      </Card.Body>
-                    </Col>
-                    <Col md={4} className="Beach-Vacations-box mt-3">
-                      <Card.Body>
-                        <Card.Title>Beach Vacations</Card.Title>
-                        <ul>
-                          <li>Tropical Beaches</li>
-                          <li>Coastal Cities</li>
-                          <li>Beach Resorts</li>
-                        </ul>
-                      </Card.Body>
-                    </Col>
-                  </Row>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-          
-          {/* Our Services Section */}
-          <Row noGutters className="top-sections">
-            <Col md={12} className="section-container">
-              <Card className="info-box">
-                <Card.Body>
-                  <Card.Title>Our Services</Card.Title>
-                  <Row noGutters>
-                    <Col md={4} className="service-box mt-3">
-                      <Card.Body>
-                        <Card.Title>Custom Itineraries</Card.Title>
-                        <ul>
-                          <li>Personalized Plans</li>
-                          <li>Guided Tours</li>
-                        </ul>
-                      </Card.Body>
-                    </Col>
-                    <Col md={4} className="service-box mt-3">
-                      <Card.Body>
-                        <Card.Title>Flight Booking</Card.Title>
-                        <ul>
-                          <li>Domestic Flights</li>
-                          <li>International Flights</li>
-                        </ul>
-                      </Card.Body>
-                    </Col>
-                    <Col md={4} className="service-box mt-3">
-                      <Card.Body>
-                        <Card.Title>Accommodation</Card.Title>
-                        <ul>
-                          <li>Hotels</li>
-                          <li>Vacation Rentals</li>
-                        </ul>
-                      </Card.Body>
-                    </Col>
-                  </Row>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-
-          {/* Flight Booking Form */}
           <FlightBookingForm title="Book Flight Tickets" />
+
+          {/* Our Services Section with images */}
+          <Card className="info-box mt-4">
+            <Card.Body>
+              <Card.Title>Our Flight Services</Card.Title>
+              <Row noGutters>
+                <Col md={4} className="service-box mt-3">
+                  <Card.Body>
+                    <img src={flight1} alt="Quick Booking" className="service-image" />
+                    <Card.Title>Quick Booking</Card.Title>
+                    <p>Book your flights in just a few clicks!</p>
+                  </Card.Body>
+                </Col>
+                <Col md={4} className="service-box mt-3">
+                  <Card.Body>
+                    <img src={flight2} alt="Best Prices" className="service-image" />
+                    <Card.Title>Best Prices</Card.Title>
+                    <p>Find the best flight deals available.</p>
+                  </Card.Body>
+                </Col>
+                <Col md={4} className="service-box mt-3">
+                  <Card.Body>
+                    <img src={flight3} alt="24/7 Support" className="service-image" />
+                    <Card.Title>24/7 Support</Card.Title>
+                    <p>We're here to help you anytime.</p>
+                  </Card.Body>
+                </Col>
+              </Row>
+            </Card.Body>
+          </Card>
         </Col>
       </Row>
     </Container>

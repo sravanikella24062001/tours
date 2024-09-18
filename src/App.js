@@ -15,7 +15,7 @@ import './App.css';
 
 const App = () => {
   const location = useLocation();
-  const showSidebar = ['/dashboard', '/home', '/about', '/Ratings', '/contact','/Services'].includes(location.pathname);
+  const showSidebar = ['/dashboard', '/blogs', '/about', '/reviews', '/contact','/bookings'].includes(location.pathname);
 
   return (
     <div className="app-container">
@@ -29,10 +29,10 @@ const App = () => {
 
           {/* Main Application Routes */}
           <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/blogs" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/Ratings" element={<Ratings />} />
-          <Route path="/Services" element={<Services />} />
+          <Route path="/reviews" element={<Ratings />} />
+          <Route path="/bookings" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
       
         </Routes>

@@ -17,23 +17,23 @@ function Sidebar() {
           </Link>
            </li>
 
-            <Link to='/home'>
-              <FontAwesomeIcon icon={faHome} /> Home
+            <Link to='/blogs'>
+              <FontAwesomeIcon icon={faHome} /> blogs
             </Link>
           </li>
           <li>
             <Link to='/about'>
-              <FontAwesomeIcon icon={faInfoCircle} /> About
+              <FontAwesomeIcon icon={faInfoCircle} /> about
             </Link>
           </li>
           <li>
-              <Link to='/Ratings'>
-                <FontAwesomeIcon icon={faStar} /> Ratings
+              <Link to='/reviews'>
+                <FontAwesomeIcon icon={faStar} /> reviews
               </Link>
             </li>
             <li>
-          <Link to='/services'>
-            <FontAwesomeIcon icon={faConciergeBell} /> Services
+          <Link to='/bookings'>
+            <FontAwesomeIcon icon={faConciergeBell} /> bookings
           </Link>
         </li>
           <li>
