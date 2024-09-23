@@ -36,7 +36,7 @@ const Dashboard = () => {
               <Card className="small-container">Top Destinations <b>New York</b></Card>
             </Grid>
             <Grid item xs={12} md={3}>
-              <Card className="small-container">Customer <b>92%</b></Card>
+              <Card className="small-container">Customer reviews <b>92%</b></Card>
             </Grid>
             <Grid item xs={12} md={3}>
               <Card className="small-container">Pending Requests <b>45</b></Card>
