@@ -19,6 +19,12 @@ body {
   background-size: cover; 
 
 }
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .login {
+    padding: 20px;
+    width: 90%; /* Full width on small screens */
+  }
 .login {
   display: flex;
   flex-direction: column;
