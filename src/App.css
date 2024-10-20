@@ -94,6 +94,11 @@ body {
 
 
 /*dashbord styles*/
+  @media (max-width: 768px) {
+  .dashboard {
+    padding: 20px;
+    width: 90%; /* Full width on small screens */
+  }
 .dashboard {
   padding: 20px;
   background: linear-gradient(to right, #ffffff, #a2c2e9); 
@@ -314,6 +319,11 @@ body {
 }
 
 /* Home.css */
+    @media (max-width: 768px) {
+  .home {
+    padding: 20px;
+    width: 90%; /* Full width on small screens */
+  }
 .home {
   display: flex;
   flex-direction: column; 
